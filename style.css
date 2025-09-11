@@ -549,3 +549,55 @@ footer p {
     font-weight: normal; /* To prevent it from being bold if the job title is bold */
     margin-left: 5px; /* Adds a little space between title and duration */
   } 
+
+/* ======================== */
+/* CERTIFICATIONS SECTION   */
+/* ======================== */
+
+#certifications {
+  margin-top: 6rem;
+}
+
+/* Main container for all certification rows */
+.certifications-container {
+  max-width: 850px; /* Adjust this value to make the rows wider or narrower */
+  margin: 2rem auto 0 auto; /* This centers the container on the page */
+  display: flex;
+  flex-direction: column; /* Stacks the certification rows vertically */
+  gap: 1.5rem; /* Adds space between each certification row */
+}
+
+/* Styles for each individual certification row */
+.cert-item {
+  display: flex; /* Aligns content (logo/name and button) in a row */
+  justify-content: space-between; /* Pushes the name and button to opposite ends */
+  align-items: center; /* Vertically centers the content in the row */
+  padding: 1rem 1.5rem; /* Adds internal spacing */
+  background: white;
+  border-radius: 2rem; /* Creates the rounded corners */
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  box-sizing: border-box;
+}
+
+/* Container for the logo image and the certification name */
+.cert-logo-and-name {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* Adds space between the logo and the text */
+}
+
+/* Styles for the certification logo image */
+.cert-logo {
+  height: 45px; /* Sets a fixed height for the logo */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Styles for the certification name text */
+.cert-item h3 {
+  margin: 0; /* Removes default browser margin from the heading */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+}
